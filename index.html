@@ -6,7 +6,123 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
-.dropbutton {
+  
+  
+  @media (max-width: 570px) {
+
+ 
+  
+    
+  .dropbutton {
+  background-color: gray;
+  color: white;
+  margin-bottom:4px;
+  padding: 10px;
+  font-size: 16px;
+  border: line;
+  border-width:6px;
+  border-color:lightblue;
+  border-radius:14px;
+  cursor: pointer;
+}
+/* The container <div> - needed to position the dropdown content, this was rewritten to work with bootstrap. It extends exactly as far as the first line. Margin is in place to show seperation and to make sure there is no bleed out */
+.dropdown {
+  
+background-color: white;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding:12px;
+  
+  
+  /* removes the typically present underline in the individual links\/*/
+  text-decoration: none;
+  
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+/* Show the dropdown menu on hover 
+This is a bit layered need to breakdown for better understanding*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* All the info needed to make the basic horizontal menu ^^^*/
+#logo{display:none;
+}
+  /*Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
+span {
+  font-weight:bold;
+ font-size:3vw;
+  white-space: pre-wrap;
+}
+.container-fluid{
+    max-width: 100%;
+  display: block;
+  height: auto;
+}
+#d1 {
+
+  background-color: lightblue;
+
+color:white;
+}
+#d2 {
+  /*Padding: properties are used to generate space around an element's content, inside of any defined borders.
+ Can be direct to top,right,left,bottom or all around*/
+  
+
+  background-image: url("https://i.ibb.co/Df67RNx/Isen-s-company-Logo.jpg");
+ background-repeat: no-repeat;
+ background-size: contain;
+  
+  
+  /*This width is partly responsible for the columns being so even. Dont forget to add it in the future*/
+  /* background-repeat:
+  Used to prevent a background image from naturally repeating either horizontally vertically or both ways 
+  */
+  background-repeat: no-repeat;
+  /*text-align: Self explanatory*/
+   text-align:center;
+  /*justify will overide other aligns and make it so each line goes an equal width across the page */
+    text-align: justify;
+  
+  
+  
+   /* This is just to fill the bottom of the page with the designated background color, It might not be good for practical use*/
+   
+}
+#d3 {
+  background-color: gray;  
+
+  color:rgb(230, 230, 230);
+}
+a.home:link,a.home:visited {
+    color: white;
+}
+  
+  }
+  
+  
+  
+  
+  @media (min-width: 570px) {
+    
+    .dropbutton {
   background-color: gray;
   color: white;
   margin-bottom:4px;
@@ -61,11 +177,10 @@ This is a bit layered need to breakdown for better understanding*/
   height:15%;
 }
   /*Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
-p {
-
+span {
   font-weight:bold;
  font-size:1.2vw;
-  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 .container-fluid{
     max-width: 100%;
@@ -74,7 +189,6 @@ p {
 }
 #d1 {
   background-color: lightblue;
-  padding-bottom: 40%; 
 color:white;
 
 }
@@ -95,32 +209,31 @@ color:white;
   background-repeat: no-repeat;
   /*text-align: Self explanatory*/
    text-align:center;
-  /*justify will overide other aligns and make it so each line goes an equal width across the page */
-    text-align: justify;
+ 
   
   
   
    /* This is just to fill the bottom of the page with the designated background color, It might not be good for practical use*/
-  padding-bottom: 40%; 
 
 }
 #d3 {
   background-color: gray;  
-   padding-bottom: 40%; 
+   
   color:rgb(230, 230, 230);
-
-
+    text-align: justify;
 }
 a.home:link,a.home:visited {
     color: white;
-}
+} 
+  }
+
   </style>
 
 
   <div class="container" >
   <div class="row">
 
-    <div class="col-1">
+    <div class="col-4">
       <button  class="dropbutton"><a class="home" href="https://ace25.github.io/S-I_Heating-AirConditioning/?fbclid=IwAR3F11Ctog5DsG1ovebHWTGvizDQ_EyefBWhcisSZ4T66S6i_EbDgigh15Y">Home </a></button>
       <div class="dropdown ">
       <button class="dropbutton">Products </button>
@@ -141,60 +254,45 @@ Zoning</a>
     
     </div>   <img class="img-responsive" id="logo" src="https://i.ibb.co/LkRRPQg/Corner-Image.jpg" alt="Corner-Image"/ >
    
-
   </div>
-
   <div class="container row">
-
-    <div id="d1" class="col-2">
-
+    <div id="d1" class="col-sm">
  
-
       </br>
-    <p >Emergency boiler breakdown,replaced boiler same night</p>
-<img class="img-responsive" src="https://i.ibb.co/jbmWF5n/Boilers.jpg" alt="Boilers" border="0"style="width:90%;">
-    <p> Mini Split Installation above ground </p>
-    <img src="https://i.ibb.co/5BBJWYM/Site-image-Workdone4.jpg" alt="Site-image-Workdone4" border="0" style="width:90%;">
-    <p>All outside units are discretely installed to add to the beauty of your home </p>
-    <img class="img-responsive" src="https://i.ibb.co/3C1tG0K/Site-image-Workdone6.jpg" alt="Site-image-Workdone6" border="0"style="width:90%;">
-
-    <p> All your maintenance needs met , We do maintenance twice a year on any init for one set price. 
-      We check the Units ,the drains, Spray with chemicals and clean the Condenser</p>
+    <span>Emergency boiler breakdown,replaced boiler same night</span> </br>
+<img class="img-responsive" src="https://i.ibb.co/jbmWF5n/Boilers.jpg" alt="Boilers" border="0"style="width:90%;"> </br>
+    <span> Mini Split Installation above ground </span>
+    <img src="https://i.ibb.co/5BBJWYM/Site-image-Workdone4.jpg" alt="Site-image-Workdone4" border="0" style="width:90%;"> </br>
+    <span>All outside units are discretely installed to add to the beauty of your home </span> </br>
+    <img class="img-responsive" src="https://i.ibb.co/3C1tG0K/Site-image-Workdone6.jpg" alt="Site-image-Workdone6" border="0"style="width:90%;"> </br>
+    <span> All your maintenance needs met , We do maintenance twice a year on any init for one set price. We check the Units ,the drains, Spray with chemicals and clean the Condenser</span> </br>
     <img class="img-responsive" src="https://i.ibb.co/Vjwvvsj/AC-mainteance.png"alt="maintenance" border="0"style="width:90%;">
     
    
     
     </div>
-
-    <div id="d2" class="col-8" >
-
+    <div id="d2" class="col-lg" >
       
    
     
      
            
     </div>
-
-
-
-    <div id="d3" class="col-2">
+    <div id="d3" class="col-sm">
      
-      <p> Feel and see the difference regular mainteance on your unit can have </p>
+      <span>Feel and see the difference regular mainteance on your unit can have </span> </br>
      <img class="img-responsive" src="https://i.ibb.co/zQdyXSp/Site-image-Mainteance.jpg" alt="Site-image-Mainteance" border="0"style="width:90%;" >
       <br/>
       
-      <p>Outdoor unit</p>
- <img class="img-responsive" src="https://i.ibb.co/k3hf73F/Site-image-Workdone2.jpg" alt="Site-image-Workdone2" border="0"style="width:90%;">
-     <p>Indoor unit</p>
-    <img src="https://i.ibb.co/rG9RLhV/Site-image-Workdone3.jpg" alt="Site-image-Workdone3" border="0"style="width:90%;">
-      <p>  We do mini splits too</p> 
+      <span>Outdoor_unit</span> </br>
+ <img class="img-responsive" src="https://i.ibb.co/k3hf73F/Site-image-Workdone2.jpg" alt="Site-image-Workdone2" border="0"style="width:90%;"> </br>
+     <span>Indoor_unit</span> 
+    <img src="https://i.ibb.co/rG9RLhV/Site-image-Workdone3.jpg" alt="Site-image-Workdone3" border="0"style="width:90%;"> </br>
+      <span>We do mini splits</span>  </br>
        <img src="https://i.ibb.co/nmcSb5V/mini-split.png" alt="Site-image-Workdone3" border="0"style="width:90%;">
       
     </div>
    
-
   </div>
                             </div>
-
-
 </html>
