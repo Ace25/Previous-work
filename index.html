@@ -135,6 +135,7 @@ a.home:link,a.home:visited {
   border-color:lightblue;
   border-radius:14px;
   cursor: pointer;
+      
 }
 /* The container <div> - needed to position the dropdown content, this was rewritten to work with bootstrap. It extends exactly as far as the first line. Margin is in place to show seperation and to make sure there is no bleed out */
 .dropdown {
@@ -143,6 +144,7 @@ background-color: white;
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+  
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -179,12 +181,12 @@ This is a bit layered need to breakdown for better understanding*/
   height:15%;
 }
   /*Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
-span {
+span {overflow:hidden;
   font-weight:bold;
- font-size:1.3vw;
   white-space: normal;
 }
 .container-fluid{
+  text-align: center;
     max-width: 100%;
   display: block;
   height: auto;
@@ -222,7 +224,7 @@ color:white;
   background-color: gray;  
    
   color:rgb(230, 230, 230);
-    text-align: justify;
+   text-align: center;
 }
 a.home:link,a.home:visited {
     color: white;
